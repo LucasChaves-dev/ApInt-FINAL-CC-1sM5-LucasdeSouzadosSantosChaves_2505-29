@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="HTML" />
+    <meta name="keywords" content="navegadores, sistemas operacionais, script, css, html, javascript" />
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+    <title>contatos - 1ADS</title>
+
+    <style>
+      table {
+        background-image: url(Imagens/textura.jpg);
+        background-repeat: repeat;
+        background-size: auto;
+      }
+    </style>
+            
+  </head>
+
+  <body>
+<!-- CABEÇALHO DA PÁGINA / ELEMENTOS DE NAVEGAÇÃO -->    
+  <header>
+    <div align="center">    
+    <h1 id="topo">Aplicações para Internet</h1>
+      <nav>
+      | <a href="index.html">Home</a>
+      | <span class="pagina">Contatos</span>
+      | <a href="quemsomos.html">Quem Somos</a>
+      |
+      </nav>
+    </div>
+    <hr>
+  </header>
+
+<!-- CONTEÚDO PRINCIPAL --> 
+  <main>
+<!-- Tabela -->    
+    <form name="formcadastro" action="mailto:empresa@brazcubas.edu.br" method="post">
+    <table border="0" width="80%" cellspacing="10" align="center">
+        <tr>
+            <th colspan="2" style="background-color: rgb(205, 221, 221); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size:x-large;">Cadastro</th>
+        </tr>
+        <!--Nome-->
+        <tr>
+            <td colspan="2">
+              <label for="f_nome">Nome:</label>
+              <input type="text" id="f_nome" name="f_nome" size="100" maxlength="80" placeholder="Digite seu nome"/>
+            </td>
+        </tr>
+        <!--E-mail e Fone-->
+        <tr>
+            <td>
+              <label for="f_email">E-mail:</label>
+              <input type="text" id="f_email" name="f_email" size="50" maxlength="45" placeholder="Digite seu e-mail..."/>
+            </td>
+            <td>
+              <label for="f_fone">Fone:</label>
+              <input type="text" id="f_fone" name="f_email" size="20" maxlength="15" placeholder="(xx)xxxxx-xxxx"/>
+            </td>
+        </tr>
+        <!--Endereço-->
+        <tr>
+          <td colspan="2">
+            <label for="f_endereco" >Endereço:</label>
+            <input type="text" id="f_endereco" name="f_endereco" size="100" maxlength="80" placeholder="Digite seu endereço"/>
+          </td>
+        </tr>
+        <!--Cidade e Estado-->
+        <tr>
+          <td>           
+            <label for="f_cidade"> Cidade:</label>
+            <input type="text" id="f_cidade" name="f_cidade" size="50" maxlength="45" placeholder="Digite sua cidade"/>
+          </td>
+          <td>
+            <label for="f_uf">Estado:</label>
+            <input type="text" id="f_uf" name="f_uf" size="15" maxlength="10" value="São Paulo"/>
+          </td>
+        </tr>
+        <!-- CUrso e Turno-->
+        <tr>
+          <td>           
+            Cursos:<br>
+            <input type="radio" id="f_curso" name="f_curso" value="ADS" checked/>
+            <label for="f_curso">Análise e Desenvolvimento de Sistemas</label><br>
+            <input type="radio" id="f_curso" name="f_curso" value="CC" />
+            <label for="f_curso">Ciência da Computação</label><br>
+            <input type="radio" id="f_curso" name="f_curso" value="SI" />
+            <label for="f_curso">Sistemas de Informação</label><br>
+          </td>
+          <td>
+            Período:<br>
+            <input type="radio" id="f_turno" name="f_turno" value="mat" checked/>
+            <label for="f_turno">Matutino</label><br>
+            <input type="radio" id="f_turno" name="f_turno" value="not" />
+            <label for="f_turno">Noturno</label><br>
+          </td>
+        </tr>
+<!-- Disciplinas e Contato-->
+        <tr>
+          <td>           
+            Diciplinas e Interesse:<br>
+            <input type="checkbox" id="f_API" name="f_API" value="API" />
+            <label for="f_API">Aplicações para Internet</label><br>
+
+            <input type="checkbox" id="f_MNR" name="f_MNR" value="MNR" />
+            <label for="f_MNR">Modelagem de Negócios e Requisitos</label><br>
+
+            <input type="checkbox" id="f_PGC" name="f_PGC" value="PGC" />
+            <label for="f_PGC">Programação de computadores</label><br>
+
+            <input type="checkbox" id="f_OAC" name="f_OAC" value="OAC" />
+            <label for="f_PGC">Organização e Arquitetura de Computadores</label><br>
+          </td>
+          <td>
+            <label for="f_contato">Contato para:</label>
+            <select name="f_contato" id="f_contato">
+              <option value="REC">Reclamação</option>
+              <option value="INF">Informação</option>
+              <option value="SUG">Sugestão</option>
+              <option value=" " selected>...</option>
+            </select>
+            <p>
+              Faça suas observações:
+            </p>
+            <p>
+              <textarea cols="40" rows="5">
+                Insira seu texto...
+              </textarea>
+            </p>
+          </td>
+        </tr>
+
+        <!--Enviar e Cancelar-->
+        <tr>
+            <td colspan="2" align="center">
+              <input type="submit" value="Enviar" name="btn_enviar" />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                        
+              <input type="reset" value="Cancelar" name="btn_cancelar" />
+            </td>
+        </tr>
+    </table>
+    </form>
+  </main>
+
+<!-- RODAPÉ DA PÁGINA -->
+  <footer>
+    <hr>
+    <div align="center">&copy; 2025 - Desenvolvido por Lucas de Souza dos Santos Chaves</div>
+  </footer>
+
+  </body>    
+</html>

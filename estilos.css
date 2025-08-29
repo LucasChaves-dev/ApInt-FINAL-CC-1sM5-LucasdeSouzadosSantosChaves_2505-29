@@ -1,0 +1,130 @@
+/* Estilo para o corpo e a página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #000000;
+    color: #F1C40F;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #000000;
+    color: #F1C40F;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Estilo para os links de navegação */
+.nav-links {
+    margin-top: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #F1C40F;
+    font-size: 1.2em;
+    margin: 0 15px;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+/* Estilo para os links de navegação Externa */
+
+/* Estilo para os links */
+a:link{color:#FFF}
+/* Estilo para os links visitado */
+a:visited{color:rgb(241, 240, 140)}
+/* Estilo para os links sobreposição de mouse */
+a:hover{color:#D4AC0D}
+/* Estilo para os links de Ativado*/
+a:active{color:#FFF}
+
+/* Definição de Classes*/
+
+.pagina{
+    font-weight:bolder;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:18px;
+}
+
+/* Estilo para as linhas horizontais */
+hr {
+    border: 0;
+    border-top: 1px solid #F1C40F;
+    margin: 5px 0;
+}
+
+/* Estilo para tabelas */
+table {
+    width: 60%;
+    margin:auto;
+    border-collapse: separate;
+    background-color: #222222;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding:15px;
+    box-align:center
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #F1C40F;
+    border-spacing: 10px;
+
+}
+
+th {
+    background-color: #333333;
+    font-size: 1.1em;
+}
+
+td {
+    font-size: 1em;
+}
+
+/* Estilo para os botões */
+button {
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #F1C40F;
+    color: #000000;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    margin:auto
+}
+
+button:hover {
+    background-color: #D4AC0D;
+}
+
+/* Estilo para o rodapé */
+footer {
+    text-align: center;
+    background-color: #000000;
+    color: #F1C40F;
+    padding: 15px 0;
+}
+
+footer a {
+    color: #F1C40F;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #FFF;
+}
+
